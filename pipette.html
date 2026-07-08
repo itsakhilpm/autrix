@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipettes — AUTRIX Precision Lab Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav id="navbar" class="scrolled">
+    <a href="index.html"><img src="images/logo.jpeg" alt="AUTRIX" class="nav-logo"></a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#mission">About</a></li>
+        <li><a href="index.html#why">Why Us</a></li>
+        <li class="has-dropdown active">
+            <a href="index.html#products">Products <i class="chevron"></i></a>
+            <ul class="dropdown">
+                <li>
+                    <a href="pipette.html">
+                        <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M11 2h2v3h3v2h-1v4l-2 9h-2l-2-9V7h-1V5h3V2z"/></svg></span>
+                        <span class="dd-text">Pipettes<small>Precision liquid handling</small></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tips.html">
+                        <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M9 2h6v4l-2 14-1 2-1-2L9 6V2z"/></svg></span>
+                        <span class="dd-text">Pipette Tips<small>Universal-fit consumables</small></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tubes.html">
+                        <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M8 2h8v2h-1v13a3 3 0 0 1-6 0V4H8V2zm3 2v6h2V4h-2z"/></svg></span>
+                        <span class="dd-text">Laboratory Tubes<small>Sample containment &amp; storage</small></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cryo-vials.html">
+                        <span class="dd-icon"><svg viewBox="0 0 24 24"><path d="M9 2h6v3h-1v14a2 2 0 0 1-2 2 2 2 0 0 1-2-2V5H9V2zm2 9v8h2v-8h-2z"/></svg></span>
+                        <span class="dd-text">Cryostorage Vials<small>Ultra-low temperature storage</small></span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ── Page Hero ── -->
+<header class="page-hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <a href="index.html#products">Products</a>
+        <span class="sep">/</span>
+        <span>Pipettes</span>
+    </div>
+    <h1>Precision Pipettes</h1>
+    <span class="page-tag">Liquid Handling</span>
+</header>
+
+<!-- ── Overview ── -->
+<section class="overview">
+    <div class="product-overview">
+        <div class="reveal reveal-left">
+            <div class="gallery-main">
+                <img id="gallery-main-img" src="images/pipette.png" alt="AUTRIX Precision Pipette">
+            </div>
+            <div class="gallery-thumbs">
+                <button class="active" onclick="swapGallery(this, 'images/pipette.png')"><img src="images/pipette.png" alt="Pipette view 1"></button>
+                <button onclick="swapGallery(this, 'images/pipette_2.png')"><img src="images/pipette_2.png" alt="Pipette view 2"></button>
+            </div>
+        </div>
+        <div class="overview-text reveal reveal-right">
+            <span class="section-tag">Product Overview</span>
+            <h2>Accuracy You Can Feel in Every Dispense</h2>
+            <p>AUTRIX pipettes are engineered for exceptional accuracy and ergonomic comfort. A lightweight body, smooth plunger action, and a clearly visible volume display make them ideal for long sessions in clinical, diagnostic, and research laboratories — delivering consistent, repeatable results every time.</p>
+            <ul class="feature-list">
+                <li><span class="check"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>Fully autoclavable lower assembly for easy decontamination</li>
+                <li><span class="check"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>Precise volume adjustment with secure click-stop lock</li>
+                <li><span class="check"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>Ergonomic grip designed to reduce hand fatigue</li>
+                <li><span class="check"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>Universal compatibility with AUTRIX and standard tips</li>
+            </ul>
+            <div class="overview-actions">
+                <a href="index.html#contact" class="btn-primary">Request a Quote</a>
+                <a href="#specs" class="btn-outline">View Specifications</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── Highlights ── -->
+<section class="highlights">
+    <div class="section-header reveal">
+        <span class="section-tag">Key Features</span>
+        <h2>Built for the Modern Lab</h2>
+    </div>
+    <div class="highlights-grid stagger">
+        <div class="why-card reveal">
+            <div class="why-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 10.6 4.2 2.4-1 1.7L11 13.5V7h2v5.6z"/></svg>
+            </div>
+            <h3>Consistent Repeatability</h3>
+            <p>Calibrated to deliver tight CV values across the full volume range, so your results stay reproducible from the first dispense to the thousandth.</p>
+        </div>
+        <div class="why-card reveal">
+            <div class="why-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            </div>
+            <h3>Durable Construction</h3>
+            <p>Chemical- and UV-resistant materials protect internal components, extending calibration intervals and service life.</p>
+        </div>
+        <div class="why-card reveal">
+            <div class="why-icon">
+                <svg viewBox="0 0 24 24"><path d="M9 11.24V7.5a2.5 2.5 0 0 1 5 0v3.74c1.21-.81 2-2.18 2-3.74a4.5 4.5 0 0 0-9 0c0 1.56.79 2.93 2 3.74zM18.84 15.87l-4.54-2.26c-.17-.07-.35-.11-.54-.11H13v-6a1.5 1.5 0 0 0-3 0v10.74l-3.43-.72c-.08-.01-.15-.03-.24-.03-.31 0-.59.13-.79.33l-.79.8 4.94 4.94c.27.27.65.44 1.06.44h6.79c.75 0 1.33-.55 1.44-1.28l.75-5.27c.01-.07.02-.14.02-.2 0-.62-.38-1.16-.91-1.38z"/></svg>
+            </div>
+            <h3>Ergonomic Comfort</h3>
+            <p>Low plunger forces and a balanced body reduce strain during high-throughput pipetting sessions.</p>
+        </div>
+        <div class="why-card reveal">
+            <div class="why-icon">
+                <svg viewBox="0 0 24 24"><path d="M19.14 12.94a7.07 7.07 0 0 0 0-1.88l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.61-.22l-2.39.96a7.03 7.03 0 0 0-1.62-.94l-.36-2.54a.5.5 0 0 0-.5-.42h-3.84a.5.5 0 0 0-.5.42l-.36 2.54c-.59.24-1.13.56-1.62.94l-2.39-.96a.5.5 0 0 0-.61.22L2.65 8.84a.5.5 0 0 0 .12.64l2.03 1.58a7.07 7.07 0 0 0 0 1.88l-2.03 1.58a.5.5 0 0 0-.12.64l1.92 3.32c.14.24.42.34.61.22l2.39-.96c.49.38 1.03.7 1.62.94l.36 2.54c.05.24.25.42.5.42h3.84c.25 0 .45-.18.5-.42l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.24.1.5 0 .61-.22l1.92-3.32a.5.5 0 0 0-.12-.64l-2.03-1.58zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/></svg>
+            </div>
+            <h3>Easy Maintenance</h3>
+            <p>Tool-free disassembly and in-lab recalibration support keep downtime to a minimum.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ── Specifications ── -->
+<section id="specs">
+    <div class="section-header reveal">
+        <span class="section-tag">Technical Details</span>
+        <h2>Specifications</h2>
+    </div>
+    <div class="specs-wrap reveal">
+        <table class="specs-table">
+            <thead>
+                <tr><th>Specification</th><th>Detail</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Volume Ranges</td><td>0.1–2.5 µL, 0.5–10 µL, 2–20 µL, 10–100 µL, 20–200 µL, 100–1000 µL</td></tr>
+                <tr><td>Channels</td><td>Single-channel &amp; multi-channel (8 / 12)</td></tr>
+                <tr><td>Adjustment</td><td>Continuous volume setting with click-stop lock</td></tr>
+                <tr><td>Accuracy</td><td>Conforms to ISO 8655 requirements</td></tr>
+                <tr><td>Sterilisation</td><td>Fully autoclavable lower assembly (121 °C)</td></tr>
+                <tr><td>Tip Compatibility</td><td>Universal — fits AUTRIX and all major tip brands</td></tr>
+                <tr><td>Calibration</td><td>Factory calibrated; user recalibration supported</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ── Related Products ── -->
+<section class="related">
+    <div class="section-header reveal">
+        <span class="section-tag">Explore More</span>
+        <h2>Related Products</h2>
+    </div>
+    <div class="related-grid stagger">
+        <a class="related-card reveal" href="tips.html">
+            <div class="img-wrap"><img src="images/tips.jpeg" alt="Pipette Tips"></div>
+            <div class="rc-body">
+                <h4>Pipette Tips</h4>
+                <span>View Product &#8594;</span>
+            </div>
+        </a>
+        <a class="related-card reveal" href="tubes.html">
+            <div class="img-wrap"><img src="images/tubes.jpeg" alt="Laboratory Tubes"></div>
+            <div class="rc-body">
+                <h4>Laboratory Tubes</h4>
+                <span>View Product &#8594;</span>
+            </div>
+        </a>
+        <a class="related-card reveal" href="cryo-vials.html">
+            <div class="img-wrap"><img src="images/cryo_vial.avif" alt="Cryostorage Vials"></div>
+            <div class="rc-body">
+                <h4>Cryostorage Vials</h4>
+                <span>View Product &#8594;</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- ── CTA ── -->
+<section>
+    <div class="cta-banner reveal">
+        <div class="orb orb-2"></div>
+        <div class="orb orb-4"></div>
+        <h2>Ready to Equip Your Lab?</h2>
+        <p>Get in touch for pricing, bulk orders, or a tailored recommendation for your laboratory's workflow.</p>
+        <div class="hero-actions">
+            <a href="index.html#contact" class="btn-primary">Request a Quote</a>
+            <a href="https://wa.me/971567278715" target="_blank" rel="noopener" class="btn-ghost">Chat on WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <img src="images/logo.jpeg" alt="AUTRIX">
+            <p>Precision lab solutions for the Middle East — supplying hospitals, universities, and research centers with equipment they can trust.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#mission">About Us</a></li>
+                <li><a href="index.html#why">Why Choose Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Products</h4>
+            <ul>
+                <li><a href="pipette.html">Pipettes</a></li>
+                <li><a href="tips.html">Pipette Tips</a></li>
+                <li><a href="tubes.html">Laboratory Tubes</a></li>
+                <li><a href="cryo-vials.html">Cryostorage Vials</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+                <li>Middle East</li>
+                <li>info@autrix.com</li>
+                <li>Sun – Thu, 9am – 6pm</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 <span>AUTRIX</span>. All rights reserved. &nbsp;|&nbsp; Precision Lab Solutions for the Middle East.</p>
+    </div>
+</footer>
+
+<!-- ── WhatsApp Floating Button ── -->
+<a href="https://wa.me/971567278715" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
+    <span class="wa-tooltip">Chat with the founder</span>
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.498 1.13 6.74 3.05 9.37L1.05 31.34l6.18-1.976A15.9 15.9 0 0 0 16.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.318 22.594c-.386 1.09-1.92 1.994-3.142 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.726-6.724-7.962-7.034-.226-.31-1.9-2.53-1.9-4.826 0-2.296 1.166-3.424 1.636-3.904.386-.394.846-.574 1.328-.574.156 0 .296.008.422.014.382.016.574.038.826.64.314.756 1.078 2.652 1.17 2.846.094.194.188.456.056.766-.124.32-.234.46-.444.708-.21.248-.41.438-.62.704-.192.232-.408.482-.166.898.242.408 1.076 1.772 2.31 2.87 1.592 1.418 2.886 1.87 3.346 2.062.342.142.75.108 1.002-.16.32-.342.714-.91 1.116-1.47.286-.4.648-.45.99-.32.348.124 2.206 1.04 2.586 1.23.38.19.632.282.726.44.092.158.092.91-.294 2z"/>
+    </svg>
+</a>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
