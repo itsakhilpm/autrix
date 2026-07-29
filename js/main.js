@@ -88,6 +88,64 @@ document.querySelectorAll('.why-card').forEach(card => {
     });
 });
 
+/* ── Hero carousel ── */
+const heroSlidesData = [
+    {
+        headingHTML: 'Accurate Liquid Handling, <span>Reliable Results</span>',
+        sub: 'Consistency starts with accuracy and ends with confidence',
+    },
+    {
+        headingHTML: 'Precision in <span>Every Drop</span>',
+        sub: 'Every microliter matters—achieve flawless precision with every dispense',
+    },
+    {
+        headingHTML: 'Where Accuracy Meets <span>Fluid Control</span>',
+        sub: 'Master every transfer with precision, control, and confidence.',
+    },
+];
+
+const heroSlideEls = document.querySelectorAll('#heroSlides .hero-slide');
+const heroHeadline = document.getElementById('heroHeadline');
+const heroSub = document.getElementById('heroSub');
+const heroDotEls = document.querySelectorAll('#heroDots .dot');
+let heroIndex = 0;
+let heroTimer;
+
+function renderHeroSlide(index) {
+    heroSlideEls.forEach((s, i) => s.classList.toggle('active', i === index));
+    heroDotEls.forEach((d, i) => d.classList.toggle('active', i === index));
+
+    heroHeadline.classList.add('fade-out');
+    heroSub.classList.add('fade-out');
+    setTimeout(() => {
+        heroHeadline.innerHTML = heroSlidesData[index].headingHTML;
+        heroSub.textContent = heroSlidesData[index].sub;
+        heroHeadline.classList.remove('fade-out');
+        heroSub.classList.remove('fade-out');
+    }, 300);
+}
+
+function resetHeroTimer() {
+    clearInterval(heroTimer);
+    heroTimer = setInterval(() => moveHeroSlide(1), 6000);
+}
+
+function goToHeroSlide(index) {
+    heroIndex = index;
+    renderHeroSlide(heroIndex);
+    resetHeroTimer();
+}
+
+function moveHeroSlide(dir) {
+    heroIndex = (heroIndex + dir + heroSlideEls.length) % heroSlideEls.length;
+    renderHeroSlide(heroIndex);
+    resetHeroTimer();
+}
+
+if (heroSlideEls.length && heroHeadline && heroSub) {
+    resetHeroTimer();
+}
+
 /* ── Carousel (index product cards) ── */
 const carouselState = {};
 

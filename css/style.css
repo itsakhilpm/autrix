@@ -430,12 +430,24 @@ section { padding: 110px 5%; }
     padding-top: 72px;
 }
 
-.hero-bg {
+.hero-slides {
     position: absolute;
     inset: 0;
-    background: url('../images/landing_page_1.jpg') center/cover no-repeat;
     z-index: 0;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.1s ease;
     animation: kenburns 22s ease-in-out infinite alternate;
+}
+
+.hero-slide.active {
+    opacity: 1;
 }
 
 .hero-overlay {
@@ -522,6 +534,65 @@ section { padding: 110px 5%; }
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+#heroHeadline, #heroSub {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#heroHeadline.fade-out, #heroSub.fade-out {
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+/* Hero carousel controls */
+.hero-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.1);
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.hero-arrow:hover {
+    background: rgba(255,255,255,0.25);
+    border-color: rgba(255,255,255,0.5);
+}
+
+.hero-arrow.prev { left: 24px; }
+.hero-arrow.next { right: 24px; }
+
+.hero-dots {
+    position: absolute;
+    z-index: 3;
+    bottom: 38px;
+    right: 6%;
+    display: flex;
+    gap: 8px;
+}
+
+.hero-dots .dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.35);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.hero-dots .dot.active {
+    background: var(--sky);
+    transform: scale(1.3);
 }
 
 /* Scroll hint */
@@ -1585,6 +1656,8 @@ footer {
     .contact-wrapper { grid-template-columns: 1fr; gap: 2rem; }
     .form-row { grid-template-columns: 1fr; }
     .hero-content { text-align: left; }
+    .hero-arrow { display: none; }
+    .hero-dots { right: 50%; transform: translateX(50%); bottom: 24px; }
     .whatsapp-float { bottom: 18px; right: 18px; }
     .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
     .page-hero { padding: 140px 6% 70px; }

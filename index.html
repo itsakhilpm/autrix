@@ -83,7 +83,7 @@
             </li>
           </ul>
         </li>
-        <li><a href="#mission">About</a></li>
+        <!-- <li><a href="#mission">About</a></li> -->
         <li><a href="#why">Why Us</a></li>
 
         <li><a href="#contact">Contact</a></li>
@@ -92,23 +92,56 @@
 
     <!-- ── Hero ── -->
     <section id="hero">
-      <div class="hero-bg"></div>
+      <div class="hero-slides" id="heroSlides">
+        <div
+          class="hero-slide active"
+          style="background-image: url('images/carousel_1.jpeg')"
+        ></div>
+        <div
+          class="hero-slide"
+          style="background-image: url('images/carousel_2.jpeg')"
+        ></div>
+        <div
+          class="hero-slide"
+          style="background-image: url('images/carousel_3.jpeg')"
+        ></div>
+      </div>
       <div class="hero-overlay"></div>
       <div class="orb orb-1"></div>
       <div class="orb orb-2"></div>
       <div class="orb orb-3"></div>
       <div class="orb orb-4"></div>
       <div class="hero-content">
-        <div class="hero-badge">Precision Lab Solutions</div>
-        <h1>Laboratory Products <span>Built for Precision</span></h1>
-        <p>
-          AURTIX delivers high-quality laboratory equipment and consumables
-          trusted by professionals across the Middle East.
+        <!-- <div class="hero-badge">Precision Lab Solutions</div> -->
+        <h1 id="heroHeadline">
+          Accurate Liquid Handling, <span>Reliable Results</span>
+        </h1>
+        <p id="heroSub">
+          Consistency starts with accuracy and ends with confidence
         </p>
         <div class="hero-actions">
           <a href="#products" class="btn-primary">Explore Products</a>
           <a href="#contact" class="btn-ghost">Get in Touch</a>
         </div>
+      </div>
+      <button
+        class="hero-arrow prev"
+        onclick="moveHeroSlide(-1)"
+        aria-label="Previous slide"
+      >
+        &#8249;
+      </button>
+      <button
+        class="hero-arrow next"
+        onclick="moveHeroSlide(1)"
+        aria-label="Next slide"
+      >
+        &#8250;
+      </button>
+      <div class="hero-dots" id="heroDots">
+        <span class="dot active" onclick="goToHeroSlide(0)"></span>
+        <span class="dot" onclick="goToHeroSlide(1)"></span>
+        <span class="dot" onclick="goToHeroSlide(2)"></span>
       </div>
       <div class="scroll-hint" aria-hidden="true"></div>
     </section>
@@ -148,7 +181,7 @@
       </div>
     </section>
 
-    <!-- ── Mission & Vision ── -->
+    <!-- ── Mission & Vision (disabled for now — may re-enable later) ──
     <section id="mission">
       <div class="section-header reveal">
         <span class="section-tag">Who We Are</span>
@@ -189,6 +222,7 @@
         </div>
       </div>
     </section>
+    -->
 
     <!-- ── Why Choose Us ── -->
     <section id="why">
@@ -221,11 +255,11 @@
               />
             </svg>
           </div>
-          <h3>Wide Product Range</h3>
+          <h3>Consistency</h3>
           <p>
-            From precision pipettes to cryogenic storage, we supply a complete
-            range of laboratory essentials — everything your lab needs from a
-            single, reliable source.
+            Reliable performance across every experiment — every batch is
+            manufactured to the same exacting standard, so your results stay
+            accurate and repeatable, run after run.
           </p>
         </div>
 
@@ -553,7 +587,7 @@
           <h4>Company</h4>
           <ul>
             <li><a href="#hero">Home</a></li>
-            <li><a href="#mission">About Us</a></li>
+            <!-- <li><a href="#mission">About Us</a></li> -->
             <li><a href="#why">Why Choose Us</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
