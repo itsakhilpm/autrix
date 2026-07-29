@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════
-   AUTRIX — Shared Scripts
+   AURTIX — Shared Scripts
    ═══════════════════════════════════════════ */
 
 /* ── Navbar shadow on scroll ── */

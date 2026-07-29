@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════
-   AUTRIX — Shared Stylesheet
+   AURTIX — Shared Stylesheet
    ═══════════════════════════════════════════ */
 
 * {
@@ -115,9 +115,8 @@ nav.scrolled {
 }
 
 .nav-logo {
-    height: 44px;
+    height: 60px;
     object-fit: contain;
-    border-radius: 6px;
 }
 
 .nav-links {
@@ -1063,9 +1062,8 @@ footer {
 }
 
 .footer-brand img {
-    height: 44px;
+    height: 62px;
     margin-bottom: 1.1rem;
-    border-radius: 8px;
 }
 
 .footer-brand p {
