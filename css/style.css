@@ -840,20 +840,83 @@ section { padding: 110px 5%; }
 }
 
 .why-icon {
-    width: 52px; height: 52px;
-    background: linear-gradient(135deg, var(--accent), var(--highlight));
-    border-radius: 13px;
+    width: 104px; height: 64px;
+    background: linear-gradient(135deg, rgba(14,131,136,0.1), rgba(43,182,115,0.1));
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.3rem;
-    box-shadow: 0 8px 18px rgba(43,182,115,0.28);
-    transition: transform 0.35s;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.35s, background 0.35s;
 }
 
-.why-card:hover .why-icon { transform: scale(1.1) rotate(6deg); }
+.why-card:hover .why-icon { transform: scale(1.04); }
 
-.why-icon svg { width: 26px; height: 26px; fill: white; }
+.why-icon svg { width: 100%; height: 100%; display: block; }
+
+/* ═══ Why-card mini illustrations ═══ */
+@keyframes iconRingPulse {
+    0%   { transform: scale(0.75); opacity: 0.6; }
+    75%  { transform: scale(1.45); opacity: 0; }
+    100% { transform: scale(1.45); opacity: 0; }
+}
+
+.icon-ring {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: iconRingPulse 2.6s ease-out infinite;
+}
+
+.icon-ring2 {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: iconRingPulse 2.6s ease-out infinite;
+    animation-delay: 0.35s;
+}
+
+@keyframes iconBarPulse {
+    0%, 100% { transform: scaleY(0.82); opacity: 0.6; }
+    50%      { transform: scaleY(1); opacity: 1; }
+}
+
+.icon-bar {
+    transform-box: fill-box;
+    transform-origin: bottom;
+    animation: iconBarPulse 1.8s ease-in-out infinite;
+}
+
+.icon-bar:nth-of-type(2) { animation-delay: 0.2s; }
+.icon-bar:nth-of-type(3) { animation-delay: 0.4s; }
+
+@keyframes iconTruckDrive {
+    0%   { transform: translateX(-34px); }
+    100% { transform: translateX(130px); }
+}
+
+.icon-truck { animation: iconTruckDrive 3.4s linear infinite; }
+
+@keyframes iconTagShine {
+    0%   { transform: translateX(-70px) rotate(20deg); opacity: 0; }
+    12%  { opacity: 0.85; }
+    45%  { opacity: 0.85; }
+    58%  { opacity: 0; }
+    100% { transform: translateX(90px) rotate(20deg); opacity: 0; }
+}
+
+.icon-shine { animation: iconTagShine 3s ease-in-out infinite; }
+
+@keyframes iconDotPulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50%      { transform: scale(1.6); opacity: 0.45; }
+}
+
+.icon-dot {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: iconDotPulse 1.6s ease-in-out infinite;
+}
 
 .why-card h3 {
     font-size: 1.15rem;
