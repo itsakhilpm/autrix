@@ -267,6 +267,42 @@ nav.scrolled {
     user-select: none;
 }
 
+/* Mega-menu (Products dropdown) */
+.dropdown-mega {
+    min-width: 640px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 0.25rem 2rem;
+}
+
+.dropdown-mega ul {
+    list-style: none;
+    margin: 0 0 0.4rem;
+    padding: 0;
+}
+
+.dropdown-col-wide .dropdown-group:not(:first-child) {
+    margin-top: 0.3rem;
+}
+
+.dd-col-link {
+    display: block;
+    padding: 8px 14px 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--sky);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    margin-bottom: 0.4rem;
+    border-radius: 0;
+    transition: color 0.2s;
+}
+
+.dd-col-link:hover {
+    color: #fff;
+    background: none;
+    transform: none;
+}
+
 /* Hamburger */
 .hamburger {
     display: none;
@@ -1302,6 +1338,17 @@ footer {
     animation: fadeUp 0.8s cubic-bezier(0.22,1,0.36,1) both 0.4s;
 }
 
+.page-hero .catalogue-name {
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-top: 0.9rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: rgba(255,255,255,0.55);
+    animation: fadeUp 0.8s cubic-bezier(0.22,1,0.36,1) both 0.5s;
+}
+
 /* Overview: gallery + description */
 .product-overview {
     display: grid;
@@ -1412,13 +1459,38 @@ footer {
 
 .feature-list .check svg { width: 12px; height: 12px; fill: #fff; }
 
+.volume-stat {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+    background: #e7f1ff;
+    border: 1px solid rgba(33,150,243,0.25);
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin-bottom: 1.75rem;
+}
+
+.volume-stat .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.volume-stat .value {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
 .overview-actions {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
-/* Highlights band */
+/* Highlights band (retained for pages that still use it) */
 .highlights { background: var(--bg); }
 
 .highlights-grid {
@@ -1428,6 +1500,51 @@ footer {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+/* Product description tabs (Overview / Specifications) */
+.product-description {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tab-bar {
+    display: flex;
+    gap: 2rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2.25rem;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 14px 2px;
+    font-size: 0.98rem;
+    font-weight: 700;
+    font-family: inherit;
+    color: var(--text-muted);
+    border-bottom: 3px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.tab-btn:hover { color: var(--primary); }
+
+.tab-btn.active {
+    color: var(--primary);
+    border-bottom-color: var(--accent);
+}
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; animation: fadeUp 0.4s ease both; }
+
+.tab-panel p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.85;
+    margin-bottom: 1.2rem;
+}
+
+.tab-panel p:last-child { margin-bottom: 0; }
 
 /* Specs */
 .specs-wrap {
@@ -1607,6 +1724,7 @@ footer {
         transform: translateX(100%);
         transition: transform 0.35s cubic-bezier(0.22,1,0.36,1);
         box-shadow: -20px 0 60px rgba(0,0,0,0.35);
+        overflow-y: auto;
     }
 
     body.menu-open .nav-links { transform: translateX(0); }
@@ -1642,8 +1760,14 @@ footer {
 
     .dropdown::before, .dropdown::after { display: none; }
 
+    .dropdown-mega {
+        min-width: 0;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
     .has-dropdown.open .dropdown {
-        max-height: 400px;
+        max-height: 900px;
         padding: 0.5rem 0.4rem;
     }
 

@@ -179,3 +179,13 @@ function swapGallery(btn, src) {
     document.querySelectorAll('.gallery-thumbs button').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
 }
+
+/* ── Product description tabs (Overview / Specifications) ── */
+function switchTab(btn, tabName) {
+    const wrap = btn.closest('.product-description');
+    if (!wrap) return;
+    wrap.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    wrap.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    wrap.querySelector(`.tab-panel[data-tab="${tabName}"]`).classList.add('active');
+}

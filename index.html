@@ -25,63 +25,81 @@
         <li><a href="#hero">Home</a></li>
         <li class="has-dropdown">
           <a href="#products">Products <i class="chevron"></i></a>
-          <ul class="dropdown">
-            <li class="dropdown-group" role="presentation">Liquid Handling</li>
-            <li>
-              <a href="pipette.html">
-                <span class="dd-icon"
-                  ><svg viewBox="0 0 24 24">
-                    <path
-                      d="M11 2h2v3h3v2h-1v4l-2 9h-2l-2-9V7h-1V5h3V2z"
-                    /></svg
-                ></span>
-                <span class="dd-text"
-                  >Pipettes<small>Precision liquid handling</small></span
-                >
-              </a>
-            </li>
-            <li>
-              <a href="tips.html">
-                <span class="dd-icon"
-                  ><svg viewBox="0 0 24 24">
-                    <path d="M9 2h6v4l-2 14-1 2-1-2L9 6V2z" /></svg
-                ></span>
-                <span class="dd-text"
-                  >Pipette Tips<small>Universal-fit consumables</small></span
-                >
-              </a>
-            </li>
-            <li>
-              <a href="tubes.html">
-                <span class="dd-icon"
-                  ><svg viewBox="0 0 24 24">
-                    <path
-                      d="M8 2h8v2h-1v13a3 3 0 0 1-6 0V4H8V2zm3 2v6h2V4h-2z"
-                    /></svg
-                ></span>
-                <span class="dd-text"
-                  >Laboratory Tubes<small
-                    >Sample containment &amp; storage</small
-                  ></span
-                >
-              </a>
-            </li>
-            <li>
-              <a href="cryo-vials.html">
-                <span class="dd-icon"
-                  ><svg viewBox="0 0 24 24">
-                    <path
-                      d="M9 2h6v3h-1v14a2 2 0 0 1-2 2 2 2 0 0 1-2-2V5H9V2zm2 9v8h2v-8h-2z"
-                    /></svg
-                ></span>
-                <span class="dd-text"
-                  >Cryostorage Vials<small
-                    >Ultra-low temperature storage</small
-                  ></span
-                >
-              </a>
-            </li>
-          </ul>
+          <div class="dropdown dropdown-mega">
+            <div class="dropdown-col dropdown-col-wide">
+              <a class="dd-col-link" href="mechanical-pipettes.html"
+                >View All Mechanical Pipettes &#8594;</a
+              >
+              <div class="dropdown-group" role="presentation">
+                Mechanical — Single-Channel
+              </div>
+              <ul>
+                <li>
+                  <a href="aurtix-lite-single.html"
+                    ><span class="dd-text"
+                      >Aurtix Lite<small>TopPette</small></span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="aurtix-neo-single.html"
+                    ><span class="dd-text"
+                      >Aurtix Neo<small>Hi-pette</small></span
+                    ></a
+                  >
+                </li>
+              </ul>
+              <div class="dropdown-group" role="presentation">
+                Mechanical — Multi-Channel
+              </div>
+              <ul>
+                <li>
+                  <a href="aurtix-lite-multi.html"
+                    ><span class="dd-text"
+                      >Aurtix Lite<small>TopPette</small></span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="aurtix-neo-multi.html"
+                    ><span class="dd-text"
+                      >Aurtix Neo<small>Hi-pette</small></span
+                    ></a
+                  >
+                </li>
+              </ul>
+              <div class="dropdown-group" role="presentation">Electronic</div>
+              <ul>
+                <li>
+                  <a href="aurtix-exa.html"
+                    ><span class="dd-text"
+                      >Aurtix Exa<small>Electronic Pipette</small></span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown-col">
+              <div class="dropdown-group" role="presentation">Consumables</div>
+              <ul>
+                <li>
+                  <a href="aurtix-tips.html"
+                    ><span class="dd-text">Aurtix Tips</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown-col">
+              <div class="dropdown-group" role="presentation">Accessories</div>
+              <ul>
+                <li>
+                  <a href="aurtix-carousels.html"
+                    ><span class="dd-text">Aurtix Carousels</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
         <!-- <li><a href="#mission">About</a></li> -->
         <li><a href="#why">Why Us</a></li>
@@ -335,167 +353,86 @@
         <h2>Our Products</h2>
       </div>
       <div class="products-grid stagger">
-        <!-- Pipette -->
-        <a class="product-card reveal" href="pipette.html">
-          <div class="carousel" id="c0">
+        <!-- Mechanical Pipettes -->
+        <a class="product-card reveal" href="mechanical-pipettes.html">
+          <div class="carousel">
             <div class="carousel-track">
               <div class="carousel-slide">
-                <img src="images/pipette.png" alt="Pipette" />
+                <img src="images/products/aurtix_lite_1.jpeg" alt="Mechanical Pipettes" />
               </div>
-              <div class="carousel-slide">
-                <img src="images/pipette_2.png" alt="Pipette view 2" />
-              </div>
-            </div>
-            <button
-              class="carousel-btn prev"
-              onclick="
-                event.preventDefault();
-                moveCarousel('c0', -1);
-              "
-            >
-              &#8249;
-            </button>
-            <button
-              class="carousel-btn next"
-              onclick="
-                event.preventDefault();
-                moveCarousel('c0', 1);
-              "
-            >
-              &#8250;
-            </button>
-            <div class="carousel-dots">
-              <span
-                class="dot active"
-                onclick="
-                  event.preventDefault();
-                  goToSlide('c0', 0);
-                "
-              ></span>
-              <span
-                class="dot"
-                onclick="
-                  event.preventDefault();
-                  goToSlide('c0', 1);
-                "
-              ></span>
             </div>
           </div>
           <div class="product-info">
             <span class="product-tag">Liquid Handling</span>
-            <h3>Pipettes</h3>
+            <h3>Mechanical Pipettes</h3>
             <p>
-              Engineered for accuracy and ergonomic comfort, our pipettes
-              deliver consistent, repeatable results across a wide volume range
-              — ideal for daily use in clinical and research laboratories.
+              Aurtix Lite and Aurtix Neo, in single- and multi-channel
+              configurations — dependable everyday pipetting and premium
+              high-throughput performance in one range.
             </p>
-            <span class="product-link">View Details &#8594;</span>
+            <span class="product-link">View Products &#8594;</span>
+          </div>
+        </a>
+
+        <!-- Electronic Pipettes -->
+        <a class="product-card reveal" href="aurtix-exa.html">
+          <div class="carousel">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="images/products/aurtix_exa_1.jpeg" alt="Electronic Pipettes" />
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Liquid Handling</span>
+            <h3>Electronic Pipettes</h3>
+            <p>
+              Aurtix Exa replaces manual plunger effort with motorised,
+              programmable pipetting — push-button accuracy and consistent
+              results for high-repetition protocols.
+            </p>
+            <span class="product-link">View Product &#8594;</span>
           </div>
         </a>
 
         <!-- Tips -->
-        <a class="product-card reveal" href="tips.html">
-          <div class="carousel" id="c1">
+        <a class="product-card reveal" href="aurtix-tips.html">
+          <div class="carousel">
             <div class="carousel-track">
               <div class="carousel-slide">
-                <img src="images/tips.jpeg" alt="Pipette Tips" />
+                <img src="images/tips.jpeg" alt="Aurtix Tips" />
               </div>
             </div>
           </div>
           <div class="product-info">
             <span class="product-tag">Consumables</span>
-            <h3>Pipette Tips</h3>
+            <h3>Tips</h3>
             <p>
-              Manufactured from high-purity polypropylene, our tips are
-              compatible with all major pipette brands. Available in filtered
-              and non-filtered variants to ensure contamination-free liquid
-              transfer.
+              Aurtix Tips are manufactured from high-purity polypropylene and
+              fit all major pipette brands. Available in filtered and
+              non-filtered variants for contamination-free transfer.
             </p>
-            <span class="product-link">View Details &#8594;</span>
+            <span class="product-link">View Product &#8594;</span>
           </div>
         </a>
 
-        <!-- Tubes -->
-        <a class="product-card reveal" href="tubes.html">
-          <div class="carousel" id="c2">
+        <!-- Carousels -->
+        <a class="product-card reveal" href="aurtix-carousels.html">
+          <div class="carousel">
             <div class="carousel-track">
               <div class="carousel-slide">
-                <img src="images/tubes.jpeg" alt="Laboratory Tubes" />
+                <img src="images/products/pipette_stand_linear_1.jpeg" alt="Aurtix Carousels" />
               </div>
             </div>
           </div>
           <div class="product-info">
-            <span class="product-tag">Sample Storage</span>
-            <h3>Laboratory Tubes</h3>
+            <span class="product-tag">Accessories</span>
+            <h3>Carousels</h3>
             <p>
-              Built for reliable sample containment and storage, our laboratory
-              tubes withstand centrifugation, temperature extremes, and chemical
-              exposure — ideal for diagnostics, research, and specimen
-              processing.
+              Aurtix Carousels keep a full set of pipettes upright and within
+              reach at the bench, in Linear or rotating Round configurations.
             </p>
-            <span class="product-link">View Details &#8594;</span>
-          </div>
-        </a>
-
-        <!-- Cryostorage Vials -->
-        <a class="product-card reveal" href="cryo-vials.html">
-          <div class="carousel" id="c3">
-            <div class="carousel-track">
-              <div class="carousel-slide">
-                <img src="images/cryo_vial.avif" alt="Cryostorage Vials" />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="images/cryo_vials_2.jpg"
-                  alt="Cryostorage Vials view 2"
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-btn prev"
-              onclick="
-                event.preventDefault();
-                moveCarousel('c3', -1);
-              "
-            >
-              &#8249;
-            </button>
-            <button
-              class="carousel-btn next"
-              onclick="
-                event.preventDefault();
-                moveCarousel('c3', 1);
-              "
-            >
-              &#8250;
-            </button>
-            <div class="carousel-dots">
-              <span
-                class="dot active"
-                onclick="
-                  event.preventDefault();
-                  goToSlide('c3', 0);
-                "
-              ></span>
-              <span
-                class="dot"
-                onclick="
-                  event.preventDefault();
-                  goToSlide('c3', 1);
-                "
-              ></span>
-            </div>
-          </div>
-          <div class="product-info">
-            <span class="product-tag">Cryogenic Storage</span>
-            <h3>Cryostorage Vials</h3>
-            <p>
-              Designed to safeguard samples at ultra-low temperatures, our
-              cryostorage vials feature leak-proof seals and durable
-              construction — ensuring sample integrity in liquid nitrogen and
-              deep-freeze environments.
-            </p>
-            <span class="product-link">View Details &#8594;</span>
+            <span class="product-link">View Product &#8594;</span>
           </div>
         </a>
       </div>
@@ -595,10 +532,10 @@
         <div class="footer-col">
           <h4>Products</h4>
           <ul>
-            <li><a href="pipette.html">Pipettes</a></li>
-            <li><a href="tips.html">Pipette Tips</a></li>
-            <li><a href="tubes.html">Laboratory Tubes</a></li>
-            <li><a href="cryo-vials.html">Cryostorage Vials</a></li>
+            <li><a href="mechanical-pipettes.html">Mechanical Pipettes</a></li>
+            <li><a href="aurtix-exa.html">Electronic Pipettes</a></li>
+            <li><a href="aurtix-tips.html">Aurtix Tips</a></li>
+            <li><a href="aurtix-carousels.html">Aurtix Carousels</a></li>
           </ul>
         </div>
         <div class="footer-col">
