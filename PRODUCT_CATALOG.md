@@ -43,7 +43,7 @@ Laboratory Tubes and Cryostorage Vials were removed entirely at the client's req
 | Aurtix Neo (Single) | `aurtix-neo-single.html` | `aurtix_neo_single_1.jpeg`, `aurtix_neo_single_2.jpeg` |
 | Aurtix Lite (Multi) | `aurtix-lite-multi.html` | `aurtix_lite_multi_1.jpeg`, `aurtix_lite_multi_2.jpeg` |
 | Aurtix Neo (Multi) | `aurtix-neo-multi.html` | `aurtix_neo_multi_1.jpeg`, `_2.jpeg`, `_3.jpeg` |
-| Aurtix Exa | `aurtix-exa.html` | `aurtix_exa_1.jpeg` |
+| Aurtix Exa | `aurtix-exa.html` | `aurtix_exa_1.jpeg`, `aurtix_exa_2.jpeg` |
 | Aurtix Tips | `aurtix-tips.html` | (existing, not in `products/`) `images/tips.jpeg`, `images/tips_1.avif`, `images/tips_2.avif` |
 | Aurtix Carousels | `aurtix-carousels.html` | `pipette_stand_linear_1.jpeg`, `_2.jpeg`, `pipette_stand_round_1.jpeg` |
 | Mechanical Pipettes hub | `mechanical-pipettes.html` | reuses each product's first image as its card thumbnail |
